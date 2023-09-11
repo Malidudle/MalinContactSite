@@ -1,0 +1,122 @@
+.infoBox {
+    font-size: 10px;
+    display: inline-flex;
+}
+
+.arrow {
+    transform: translate(-250%, 170%) rotate(-70deg);
+}
+
+.infoBox span {
+    transform: translate(-50%, 120%) rotate(-25deg);
+}
+
+@keyframes fade-out {
+    from {
+      opacity: 100%;
+    }
+    to {
+      opacity: 30%;
+    }
+  }
+
+  @keyframes fade-in {
+    from {
+      opacity: 30%;
+    }
+    to {
+      opacity: 100%;
+    }
+  }
+
+  @media only screen and (max-width: 330px) {
+    .arrow {
+      transform: translate(800%, -10%) rotate(-70deg);
+  }
+  
+  .infoBox span {
+      transform: translate(200%, 20%) rotate(-2deg);
+  }
+  }
+
+.fadedOutTextBox {
+    font-size: 30px;
+    text-transform: uppercase;
+    animation: fade-out 0.2s ease-in-out forwards;
+}
+
+.fadedInTextBox {
+    font-size: 30px;
+    text-transform: uppercase;
+    animation: fade-in 0.2s ease-in-out forwards;
+}
+
+.phoneNumber {
+    display: inline-flex;
+    font-size: 30px;
+    text-transform: uppercase;
+}
+
+.phoneNumber .letter {
+    transition: transform 350ms ease;
+}
+
+.phoneNumber:hover .letter{
+    transition-duration: 800ms;
+  }
+
+  .phoneNumber:hover .letter:nth-child(1){
+    transform: translate(-60%, 30%) rotate(8deg);
+  }
+
+  .phoneNumber:hover .letter:nth-child(2){
+    transform: translate(-40%, -10%) rotate(-5deg);
+  }
+
+  .phoneNumber:hover .letter:nth-child(3){
+    transform: translate(10%, 20%) rotate(13deg);
+  }
+
+  .phoneNumber:hover .letter:nth-child(5){
+    transform: translate(-35%, -30%) rotate(-13deg);
+  }
+
+  .phoneNumber:hover .letter:nth-child(6){
+    transform: translate(-50%, 15%) rotate(18deg);
+  }
+
+  .phoneNumber:hover .letter:nth-child(7){
+    transform: translate(10%, -30%) rotate(8deg);
+  }
+
+  .phoneNumber:hover .letter:nth-child(8){
+    transform: translate(-40%, 50%) rotate(-18deg);
+  }
+
+  .phoneNumber:hover .letter:nth-child(9){
+    transform: translate(-10%, 10%) rotate(8deg);
+  }
+
+  .phoneNumber:hover .letter:nth-child(10){
+    transform: translate(23%, -35%) rotate(-8deg);
+  }
+
+  .phoneNumber:hover .letter:nth-child(11){
+    transform: translate(40%, 30%) rotate(5deg);
+  }
+
+  .phoneNumber:hover .letter:nth-child(12){
+    transform: translate(37%, -20%) rotate(8deg);
+  }
+
+  .phoneNumber:hover .letter:nth-child(13){
+    transform: translate(40%, 30%) rotate(-20deg);
+  }
+
+  .phoneNumber:hover .letter:nth-child(14){
+    transform: translate(40%, -40%) rotate(11deg);
+  }
+
+  .phoneNumber:hover .letter:nth-child(15){
+    transform: translate(60%, -15%) rotate(-8deg);
+  }

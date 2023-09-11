@@ -1,0 +1,58 @@
+.curlingOr {
+    padding-top: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.emailContact{
+    padding-top: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    gap: 8px;
+}
+
+.sendEmailPrompt {
+    font-size: 30px;
+    display: flex;
+    align-items: center;
+}
+
+.wordOr {
+    font-size: 30px;
+    display: flex;
+}
+
+.chevron {
+    transform: translate(25%, 45%) rotate(8deg);
+}
+
+.letter:nth-child(4) {
+    transform: translate(-5%, 8%);
+}
+
+.letter:nth-child(5) {
+    transform: translate(-5%, 18%);
+}
+
+.letter:nth-child(6) {
+    transform: translate(-19%, 40%);
+}
+
+.letter:nth-child(7) {
+    transform: translate(-100%, 90%);
+}
+
+.letter:nth-child(8) {
+    transform: translate(-210%, 140%);
+}
+
+.letter:nth-child(9) {
+    transform: translate(-320%, 190%);
+}
+
+.letter:nth-child(10) {
+    transform: translate(-440%, 240%);
+}

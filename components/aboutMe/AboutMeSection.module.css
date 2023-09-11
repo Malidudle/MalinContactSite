@@ -1,0 +1,72 @@
+.portrait {
+    border-radius: 50%;
+    margin-left: 0.7rem;
+}
+
+.row {
+    display: flex;
+    align-items: center;
+}
+
+.header {
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 0;
+}
+
+.link {
+    color: white;
+}
+
+.aboutMeContainer {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    background-color: rgb(12, 12, 12);
+    border-radius: 17px;
+    padding: 1.25rem;
+    margin-bottom: 3rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    width: 90vw;
+    max-width: 680px;
+}
+
+.aboutMe {
+        padding: 0.9rem;
+        background-color: rgb(30, 30, 30);
+        border-radius: 17px;
+        width: 90vw;
+        max-width: 600px;
+        width: 95%;
+    }
+
+.aboutMe li {
+    list-style-type: none;
+    margin-bottom: 0.8rem;
+    border-radius: 4px;
+    padding: 2px;
+    background-color: rgb(50, 50, 50);
+    text-align: center;
+    width: auto;
+    word-wrap: break-word;
+}
+
+.aboutMe:last-child {
+    margin-bottom: 0px;
+}
+
+@media screen and (max-width: 560px) {
+    .row {
+        flex-direction: column;
+    }
+    .portrait {
+        margin-left: 0;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .header {
+        font-size: x-large;
+    }
+}

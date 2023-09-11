@@ -1,0 +1,46 @@
+.techList {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 18px;
+    padding-left: 0;
+    max-width: 550px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.itemRow {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 18px;
+}
+
+.info {
+    padding: 0.9rem;
+    background-color: rgb(30, 30, 30);
+    width: 90vw;
+    max-width: 600px;
+    border-radius: 17px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 95%;
+}
+
+.infoBox {
+    background-color: rgb(12, 12, 12);
+
+    border-radius: 17px;
+    padding: 1.25rem;;
+    margin-bottom: 3rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    width: 90vw;
+    max-width: 680px;
+}
+
+.title {
+    text-align: center;
+    margin-top: 0;
+  }

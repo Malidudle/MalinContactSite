@@ -1,0 +1,14 @@
+body {
+  background-color: black;
+  color: #F4EEE0!important;
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(45deg, #040D12 , #183D3D);
+  /* background: radial-gradient(circle at -50% -50%, rgb(51, 50, 50) 0%, #040D12 99.99%); */
+}
+
+html {
+  background: #183D3D;
+  width: 100vw;
+  height: 100vh;
+}
