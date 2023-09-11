@@ -16,7 +16,7 @@ const TechLogo = ({ imageSrc, alt, width, height }: Props) => {
       whileHover={{ scale: 1.06 }}
       whileTap={{ scale: 0.95 }}
     >
-      <Image src={imageSrc} width={width} height={height} alt={alt} />
+      <Image src={imageSrc} width={width} height={height} alt={alt} draggable={false} />
     </motion.div>
   );
 };
