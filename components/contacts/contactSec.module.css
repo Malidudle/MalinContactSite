@@ -55,6 +55,7 @@
     display: inline-flex;
     font-size: 30px;
     text-transform: uppercase;
+    cursor: pointer;
 }
 
 .phoneNumber .letter {

@@ -38,7 +38,8 @@ const techInfo = [
 
 const FavTechStack = () => {
   const [info, setInfo] = useState("Starting");
-  const prismaTech = techInfo.find((tech) => tech.technology === info);
+  const tech = techInfo.find((tech) => tech.technology === info);
+
   return (
       <div className={styles.infoBox}>
         <h2 className={styles.title}>Web Tech Favoutites</h2>
@@ -81,7 +82,7 @@ const FavTechStack = () => {
           </li>
         </ul>
         <div className={styles.info}>
-          <p>{String(prismaTech?.explanation)}</p>
+          <p>{String(tech?.explanation)}</p>
         </div>
       </div>
   );

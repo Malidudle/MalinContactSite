@@ -1,6 +1,6 @@
-"use client"
+"use client";
 
-import emailjs from '@emailjs/browser';
+import emailjs from "@emailjs/browser";
 import {
   TextInput,
   Textarea,
@@ -10,7 +10,8 @@ import {
   Button,
 } from "@mantine/core";
 import { useForm } from "@mantine/form";
-import { FormEvent } from 'react';
+import { FormEvent } from "react";
+import styles from "./emailForm.module.css";
 
 export function GetInTouchSimple() {
   const form = useForm({
@@ -32,16 +33,24 @@ export function GetInTouchSimple() {
       return;
     }
 
-    emailjs.sendForm('service_mbqojbb', 'template_kn0r633', e.currentTarget, 'aw3APk4rymQQvCo13')
-      .then((result) => {
+    emailjs
+      .sendForm(
+        "service_mbqojbb",
+        "template_kn0r633",
+        e.currentTarget,
+        "aw3APk4rymQQvCo13"
+      )
+      .then(
+        (result) => {
           console.log(result.text);
           form.reset();
-      }, (error) => {
+        },
+        (error) => {
           console.log(error.text);
           form.reset();
-      });
+        }
+      );
   };
-
 
   return (
     <form onSubmit={(e) => handleSubmit(e)}>
@@ -61,6 +70,7 @@ export function GetInTouchSimple() {
 
       <SimpleGrid cols={2} mt="xl" breakpoints={[{ maxWidth: "sm", cols: 1 }]}>
         <TextInput
+          className={styles.input}
           label="Name"
           type="text"
           placeholder="Your name"
@@ -91,7 +101,7 @@ export function GetInTouchSimple() {
         label="Message"
         placeholder="Your message"
         maxRows={10}
-        color='#93B1A6'
+        color="#93B1A6"
         minRows={5}
         autosize
         name="message"
